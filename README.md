@@ -1,5 +1,6 @@
 # StarLib-JsonUI
 A small library to help you create simple JsonUI forms.
+## License
 
 ![Logo](https://i.postimg.cc/505tF3Lx/model.png)
 
