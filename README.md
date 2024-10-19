@@ -77,4 +77,4 @@ Let's change our textures and form size:
 },
 ```
 And out **RugUI** parody done!
-[Check **RugUI** here: - one of the most powerful UIs](https://discord.com/channels/523663022053392405/1294631804740964405)
+[**RugUI** — one of the most powerful UIs](https://discord.com/channels/523663022053392405/1294631804740964405)
