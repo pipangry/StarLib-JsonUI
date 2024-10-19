@@ -2,7 +2,7 @@
 A small library to help you create simple JsonUI forms.
 [MIT license](https://choosealicense.com/licenses/mit/)
 
-![Logo](https://i.postimg.cc/505tF3Lx/model.png)
+![Logo](https://i.postimg.cc/qBsh5WjM/model.png)
 
 Scroll down to view full documentation
 
