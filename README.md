@@ -238,7 +238,7 @@ Now let's make custom form content
 ## @starlib_common.button_image
 | Description |
 | :-------------------------------- |
-| Button image |
+| Form button image |
 
 ## @starlib_common.binding
 | Parameter | Default Value | Description |
@@ -249,3 +249,50 @@ Now let's make custom form content
 | Parameter | Default Value | Description |
 | :-------- | :-------  | :-------------------------------- |
 |$key||If there is a $key value in #form_button_text, panel isn't visible|
+
+# starlib_button.json
+
+## @starlib_button.button_template
+| Parameter | Default Value | Description |
+| :-------- | :-------  | :-------------------------------- |
+|$default_button_state|starlib_style.button_state_default|Default button element|
+|$button_content|starlib_button.button_content|Element that will act as the button content|
+|$hover_button_state|starlib_style.button_state_hover|Hover button element|
+|$pressed_button_state|starlib_style.button_state_hover|Pressed button element|
+
+## @starlib_button.horizontal_button
+| Parameter | Default Value | Description |
+| :-------- | :-------  | :-------------------------------- |
+|$button_size|100%, 32|Size of the button|
+
+## @starlib_button.default_button
+| Parameter | Default Value | Description |
+| :-------- | :-------  | :-------------------------------- |
+|$button_size|100%y, 100%|Size of the button|
+
+## @starlib_button.button_content
+| Parameter | Default Value | Description |
+| :-------- | :-------  | :-------------------------------- |
+|$button_text_control|starlib_button.button_text_template|Button content text element|
+
+# starlib_style.json
+
+## @starlib_style.texture
+| Parameter | Default Value | Description |
+| :-------- | :-------  | :-------------------------------- |
+|$texture_path|textures/ui/cell_image_darkgrey|Image texture|
+
+## @starlib_style.text
+| Description |
+| :-------------------------------- |
+| Label template |
+
+## @starlib_style.title_template
+| Parameter | Default Value | Description |
+| :-------- | :-------  | :-------------------------------- |
+|$title_font_type|MinecraftSeven|Title font type|
+
+## @starlib_style.form_text
+| Description |
+| :-------------------------------- |
+| Form text template |
