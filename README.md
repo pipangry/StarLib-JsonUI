@@ -7,7 +7,7 @@ A small library to help you create simple JsonUI forms.
 Scroll down to view full documentation
 
 ## Getting started
-1. Download latest release add starlib folder into your ui folder.
+1. Download latest release and add starlib folder into your ui folder.
 2. If you already have the ui_defs file, combine it with the one that comes bundled with starlib
 3. Create your first starlib screen!
 ## server_form.json
