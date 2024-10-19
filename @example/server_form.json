@@ -1,7 +1,7 @@
 {
   "namespace": "server_form",
   "third_party_server_screen@common.base_screen": {
-    "$screen_content": "server_form.rug_form",
+    "$screen_content": "server_form.form",
     "button_mappings": [
       {
         "from_button_id": "button.menu_cancel",
@@ -10,7 +10,7 @@
       }
     ]
   },
-  "rug_form": {
+  "form": {
     "type": "panel",
     "size": [
       "100%",
@@ -22,18 +22,8 @@
           "type": "factory",
           "control_ids": {
             "long_form": "@server_form.long_form",
-            "custom_form": "@custom_form.rug_screen"
+            "custom_form": "@server_form.custom_form"
           }
-        }
-      },
-      {
-        "showcase_watermark@style.label": {
-          "size": [
-            "100% - 4px",
-            "100% - 4px"
-          ],
-          "text": "Showcase screen. Can be customized.\nBy pipa_ngry",
-          "text_alignment": "left"
         }
       }
     ]
