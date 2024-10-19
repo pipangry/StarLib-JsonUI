@@ -1,0 +1,80 @@
+{
+  "namespace": "server_form",
+  "third_party_server_screen@common.base_screen": {
+    "$screen_content": "server_form.rug_form",
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "button.menu_exit",
+        "mapping_type": "global"
+      }
+    ]
+  },
+  "rug_form": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "controls": [
+      {
+        "server_form_factory": {
+          "type": "factory",
+          "control_ids": {
+            "long_form": "@server_form.long_form",
+            "custom_form": "@custom_form.rug_screen"
+          }
+        }
+      },
+      {
+        "showcase_watermark@style.label": {
+          "size": [
+            "100% - 4px",
+            "100% - 4px"
+          ],
+          "text": "Showcase screen. Can be customized.\nBy pipa_ngry",
+          "text_alignment": "left"
+        }
+      }
+    ]
+  },
+  "long_form@starlib_style.texture": {
+    "$texture_path": "textures/example/border",
+    "size": [
+      320,
+      240
+    ],
+    "controls": [
+      {
+        "long_form@starlib_screen.screen_template": {
+          "$size": [
+            "100% - 2px",
+            "100% - 2px"
+          ],
+          "$header_size": [
+            "100%",
+            28
+          ],
+          "$header_texture_control": "server_form.header_texture",
+          "$background_control": "server_form.background_texture",
+          "$button_control": "starlib_button.horizontal_button",
+          "$default_button_state": "server_form.my_button",
+          "$hover_button_state": "server_form.my_button_hover",
+          "$pressed_button_state": "server_form.my_button_hover"
+        }
+      }
+    ]
+  },
+  "header_texture@starlib_style.texture": {
+    "$texture_path": "textures/example/header"
+  },
+  "background_texture@starlib_style.texture": {
+    "$texture_path": "textures/example/background"
+  },
+  "my_button@starlib_style.texture": {
+    "$texture_path": "textures/example/button"
+  },
+  "my_button_hover@starlib_style.texture": {
+    "$texture_path": "textures/example/border"
+  }
+}
