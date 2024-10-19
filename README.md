@@ -196,6 +196,8 @@ Now let's make custom form content
 
 # Documentation
 
+# starlib_screen
+
 ## @starlib_screen.screen_template
 | Parameter | Default Value | Description |
 | :-------- | :-------  | :-------------------------------- |
@@ -208,3 +210,15 @@ Now let's make custom form content
 | Parameter | Default Value | Description |
 | :-------- | :-------  | :-------------------------------- |
 |$header_size|100%, 24|Size of the header element|
+|$header_texture_control|starlib_style.header_texture|Element that will act as the header texture|
+|$title_control|starlib_style.title_template|Element that will act as form title|
+|$title_font_type|MinecraftSeven|starlib_style.title_template Font type|
+|$close_button_control|starlib_common.close_button|Close button element|
+
+## @starlib_screen.content_template
+| Parameter | Default Value | Description |
+| :-------- | :-------  | :-------------------------------- |
+|$scrolling_content|starlib_screen.scrolling_content|Scrolling content|
+|$button_control|starlib_style.starlib_error_button_control|Button factory element|
+
+## 
