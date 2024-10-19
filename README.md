@@ -195,3 +195,9 @@ Now let's make custom form content
 ![App Screenshot](https://i.postimg.cc/Wb2byCJj/2024-10-19-123408.png?text=App+Screenshot+Here)
 
 # Documentation
+
+## @starlib_screen.screen_template
+| Parameter | Default Value  |Description                   |
+| :-------- | :-------  | :-------------------------------- |
+|$size|225, 200|Size of screen template|
+||||
