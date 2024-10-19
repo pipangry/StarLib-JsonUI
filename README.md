@@ -196,7 +196,7 @@ Now let's make custom form content
 
 # Documentation
 
-# starlib_screen
+# starlib_screen.json
 
 ## @starlib_screen.screen_template
 | Parameter | Default Value | Description |
@@ -221,4 +221,31 @@ Now let's make custom form content
 |$scrolling_content|starlib_screen.scrolling_content|Scrolling content|
 |$button_control|starlib_style.starlib_error_button_control|Button factory element|
 
-## 
+# starlib_common.json
+
+## @starlib_common.close_button
+| Parameter | Default Value | Description |
+| :-------- | :-------  | :-------------------------------- |
+|$close_button_texture|starlib_style.close_button_texture|Close button texture|
+|$close_button_texture_hover|starlib_style.close_button_texture_hover|Close button texture on hover state|
+
+## @starlib_common.scrolling_panel
+| Parameter | Default Value | Description |
+| :-------- | :-------  | :-------------------------------- |
+|$scrolling_content|starlib_style.starlib_error_scrolling_pane|Scrolling panel content|
+|$scrolling_panel_size|100% - 8px, 100% - 8px|Size of the scrolling panel|
+
+## @starlib_common.button_image
+| Description |
+| :-------------------------------- |
+| Button image |
+
+## @starlib_common.binding
+| Parameter | Default Value | Description |
+| :-------- | :-------  | :-------------------------------- |
+|$key||If there is a $key value in #form_button_text, panel is visible|
+
+## @starlib_common.reverse_binding
+| Parameter | Default Value | Description |
+| :-------- | :-------  | :-------------------------------- |
+|$key||If there is a $key value in #form_button_text, panel isn't visible|
