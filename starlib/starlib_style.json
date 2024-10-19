@@ -1,0 +1,81 @@
+{
+    "namespace": "starlib_style",
+    "texture": {
+        "type": "image",
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "texture": "$texture_path",
+        "$texture_path|default": "textures/ui/cell_image_darkgrey"
+    },
+    "text": {
+        "type": "label",
+        "size": [
+            "100%",
+            "default"
+        ],
+        "max_size": [
+            "100%",
+            "100%"
+        ],
+        "font_scale_factor": 1,
+        "font_type": "MinecraftSeven",
+        "font_size": "normal",
+        "text": "starlib_text",
+        "text_alignment": "center",
+        "layer": 25
+      },
+    "header_texture@texture": {
+        "$texture_path": "textures/ui/background_panel"
+    },
+    "close_button_texture@texture": {
+        "$texture_path": "textures/ui/close_button_default"
+    },
+    "close_button_texture_hover@texture": {
+        "$texture_path": "textures/ui/close_button_hover_light"
+    },
+    "title_template@text": {
+        "text": "#title_text",
+        "$title_font_type|default": "MinecraftSeven",
+        "font_type": "$title_font_type",
+        "bindings": [
+            {
+              "binding_name": "#title_text",
+              "binding_type": "global"
+            }
+        ]
+    },
+    "screen_background@texture": {
+        "$screen_background_texture|default": "textures/ui/background_indent_no_top",
+        "$texture_path": "$screen_background_texture"
+    },
+    "starlib_error_scrolling_pane@text": {
+        "text": "\n\n§7Starlib\n§c(Scrolling content not defined)"
+    },
+    "starlib_error_button_control@text": {
+        "text": "\n\n§7Starlib\n§c(Button control not defined)"
+    },
+    "form_text@text": {
+        "text": "#form_text",
+        "text_alignment": "left",
+        "size": [
+          "100%",
+          "default"
+        ],
+        "max_size": [],
+        "bindings": [
+          {
+            "binding_type": "view",
+            "source_property_name": "(not(#form_text = ''))",
+            "target_property_name": "#visible"
+          }
+        ]
+    },
+    "button_state_default@texture": {
+        "$texture_path": "textures/ui/button_borderless_light"
+    },
+    "button_state_hover@texture": {
+        "$texture_path": "textures/ui/button_borderless_lighthover"
+    }
+}

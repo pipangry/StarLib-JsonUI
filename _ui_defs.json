@@ -1,0 +1,8 @@
+{
+    "ui_defs": [
+      "ui/starlib/starlib_common.json",
+      "ui/starlib/starlib_button.json",
+      "ui/starlib/starlib_style.json",
+      "ui/starlib/starlib_screen.json"
+    ]
+  }

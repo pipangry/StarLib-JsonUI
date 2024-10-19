@@ -1,0 +1,133 @@
+{
+    "namespace": "starlib_common",
+    "close_button@common.button": {
+        "anchor_from": "right_middle",
+        "anchor_to": "right_middle",
+        "$pressed_button_name": "button.menu_exit",
+        "size": [
+          15,
+          15
+        ],
+        "offset": [
+          -5,
+          0
+        ],
+        "$close_button_texture|default": "starlib_style.close_button_texture",
+        "$close_button_texture_hover|default": "starlib_style.close_button_texture_hover",
+        "controls": [
+          {
+            "default@$close_button_texture": {}
+          },
+          {
+            "hover@$close_button_texture_hover": {}
+          },
+          {
+            "pressed@$close_button_texture_hover": {}
+          }
+        ]
+      },
+      "scrolling_panel@common.scrolling_panel": {
+        "$scroll_bar_contained": false,
+        "$scroll_bar_left_padding_size": [
+          2,
+          0
+        ],
+        "$scroll_bar_right_padding_size": [
+          0,
+          0
+        ],
+        "$scroll_size": [
+          5,
+          "100%"
+        ],
+        "$scroll_view_port_offset": [
+          0,
+          0
+        ],
+        "$scrolling_content|default": "starlib_style.starlib_error_scrolling_pane",
+        "$scrolling_pane_offset": [
+          0,
+          0
+        ],
+        "$scrolling_pane_size": [
+          "100%",
+          "100%"
+        ],
+        "$show_background": false,
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "$scrolling_panel_size|default": [
+          "100% - 8px",
+          "100% - 8px"
+        ],
+        "size": "$scrolling_panel_size"
+      },
+      "button_image@starlib_style.texture": {
+        "layer": 21,
+        "bindings": [
+          {
+            "binding_name": "#form_button_texture",
+            "binding_name_override": "#texture",
+            "binding_type": "collection",
+            "binding_collection_name": "form_buttons"
+          },
+          {
+            "binding_name": "#form_button_texture_file_system",
+            "binding_name_override": "#texture_file_system",
+            "binding_type": "collection",
+            "binding_collection_name": "form_buttons"
+          },
+          {
+            "binding_type": "view",
+            "source_property_name": "(not ((#texture = '') or (#texture = 'loading')))",
+            "target_property_name": "#visible"
+          }
+        ]
+      },
+      "binding": {
+        "type": "panel",
+        "$key|default": "",
+        "visible": false,
+        "enabled": false,
+        "bindings": [
+          {
+            "binding_collection_name": "form_buttons",
+            "binding_name": "#form_button_text",
+            "binding_type": "collection"
+          },
+          {
+            "source_property_name": "(not((#form_button_text - $key) = #form_button_text))",
+            "binding_type": "view",
+            "target_property_name": "#visible"
+          },
+          {
+            "source_property_name": "(not((#form_button_text - $key) = #form_button_text))",
+            "binding_type": "view",
+            "target_property_name": "#enabled"
+          }
+        ]
+      },
+      "reverse_binding": {
+        "type": "panel",
+        "$key|default": "",
+        "visible": false,
+        "enabled": false,
+        "bindings": [
+          {
+            "binding_collection_name": "form_buttons",
+            "binding_name": "#form_button_text",
+            "binding_type": "collection"
+          },
+          {
+            "source_property_name": "((#form_button_text - $key) = #form_button_text)",
+            "binding_type": "view",
+            "target_property_name": "#visible"
+          },
+          {
+            "source_property_name": "((#form_button_text - $key) = #form_button_text)",
+            "binding_type": "view",
+            "target_property_name": "#enabled"
+          }
+        ]
+      }
+}

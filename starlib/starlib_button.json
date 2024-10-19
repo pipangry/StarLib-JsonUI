@@ -1,0 +1,158 @@
+{
+    "namespace": "starlib_button",
+    "button_template": {
+        "type": "panel",
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "$default_button_state|default": "starlib_style.button_state_default",
+        "$button_content|default": "starlib_button.button_content",
+        "$hover_button_state|default": "starlib_style.button_state_hover",
+        "$pressed_button_state|default": "starlib_style.button_state_hover",
+        "controls": [
+            {
+                "button_panel@common.button": {
+                    "$pressed_button_name": "button.form_button_click",
+                    "$default_state": false,
+                    "size": [
+                      "100%",
+                      "100%"
+                    ],
+                    "bindings": [
+                      {
+                        "binding_collection_name": "form_buttons",
+                        "binding_type": "collection_details"
+                      }
+                    ],
+                    "controls": [
+                        {
+                            "hover@$hover_button_state": {
+                                "layer": 10
+                            }
+                        },
+                        {
+                            "pressed@$pressed_button_state": {
+                                "layer": 10
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "default_state@$default_button_state": {
+                    "layer": 8
+                }
+            },
+            {
+                "button_content@$button_content": {}
+            }
+        ]
+    },
+    "horizontal_button": {
+        "type": "panel",
+        "$button_size|default": [
+            "100%",
+            32
+        ],
+        "size": "$button_size",
+        "controls": [
+            {
+                "button": {
+                    "type": "stack_panel",
+                    "orientation": "horizontal",
+                    "size": [
+                        "100%",
+                        "100% - 2px"
+                    ],
+                    "controls": [
+                        {
+                            "image@starlib_common.button_image": {
+                                "size": [
+                                    "100%y",
+                                    "100%"
+                                ]
+                            }
+                        },
+                        {
+                            "button@button_template": {
+                                "size": [
+                                    "fill",
+                                    "100%"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "default_button": {
+        "type": "panel",
+        "$button_size|default": [
+            "100%y",
+            "100%"
+        ],
+        "size": "$button_size",
+        "controls": [
+            {
+                "button@button_template": {
+                    "size": [
+                        "100% - 2px",
+                        "100% - 2px"
+                    ],
+                    "$button_content": "starlib_button.default_button_content"
+                }
+            }
+        ]
+    },
+    "default_button_content": {
+        "type": "stack_panel",
+        "orientation": "vertical",
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "controls": [
+            {
+                "image@starlib_common.button_image": {
+                    "size": [
+                        "100%",
+                        "fill"
+                    ]
+                }
+            },
+            {
+                "button_text@button_text_template": {}
+            }
+        ]
+    },
+    "button_content": {
+        "type": "panel",
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "$button_text_control|default": "starlib_button.button_text_template",
+        "controls": [
+            {
+                "button_text@$button_text_control": {}
+            }
+        ]
+    },
+    "button_text_template@starlib_style.text": {
+        "text": "#form_button_text",
+        "bindings": [
+            {
+              "binding_collection_name": "form_buttons",
+              "binding_name": "#form_button_text",
+              "binding_type": "collection"
+            },
+            {
+              "source_property_name": "(not(#form_button_text = ''))",
+              "binding_type": "view",
+              "target_property_name": "#visible"
+            }
+          ]
+    }
+}

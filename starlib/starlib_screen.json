@@ -1,0 +1,97 @@
+{
+    "namespace": "starlib_screen",
+    "screen_template": {
+        "type": "stack_panel",
+        "orientation": "vertical",
+        "size": "$size",
+        "$size|default": [
+            225,
+            200
+        ],
+        "$header_control|default": "starlib_screen.header_template",
+        "$content_control|default": "starlib_screen.content_template",
+        "$background_control|default": "starlib_style.screen_background",
+        "controls": [
+            {
+                "header@$header_control": {}
+            },
+            {
+                "content": {
+                    "type": "panel",
+                    "size": [
+                        "100%",
+                        "fill"
+                    ],
+                    "controls": [
+                        {
+                            "content@$content_control": {}
+                        },
+                        {
+                            "background@$background_control": {}
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "header_template": {
+        "type": "panel",
+        "size": "$header_size",
+        "$header_size|default": [
+            "100%",
+            24
+        ],
+        "$header_texture_control|default": "starlib_style.header_texture",
+        "$title_control|default": "starlib_style.title_template",
+        "$close_button_control|default": "starlib_common.close_button",
+        "controls": [
+            {
+                "header_texture@$header_texture_control": {}
+            },
+            {
+                "title@$title_control": {}
+            },
+            {
+                "close_button@$close_button_control": {}
+            }
+        ]
+    },
+    "content_template@starlib_common.scrolling_panel": {
+        "$scrolling_content": "starlib_screen.scrolling_content"
+    },
+    "scrolling_content": {
+        "type": "stack_panel",
+        "orientation": "vertical",
+        "size": [
+            "100%",
+            "100%c"
+        ],
+        "controls": [
+            {
+                "form_text@starlib_style.form_text": {}
+            },
+            {
+                "button_stack": {
+                    "type": "stack_panel",
+                    "orientation": "vertical",
+                    "size": [
+                      "100%",
+                      "100%c"
+                    ],
+                    "$button_control|default": "starlib_style.starlib_error_button_control",
+                    "factory": {
+                      "name": "buttons",
+                      "control_name": "$button_control"
+                    },
+                    "collection_name": "form_buttons",
+                    "bindings": [
+                        {
+                          "binding_name": "#form_button_length",
+                          "binding_name_override": "#collection_length"
+                        }
+                      ]
+                }
+            }
+        ]
+    }
+}
