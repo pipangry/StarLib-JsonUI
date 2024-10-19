@@ -32,4 +32,5 @@ A small library to help you create simple JsonUI forms.
  "$button_control": "starlib_button.horizontal_button"
 }
 ```
+## Here's what happened
 ![App Screenshot](https://i.postimg.cc/jSkcG6Wd/2024-10-19-113144.png?text=App+Screenshot+Here)
