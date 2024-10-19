@@ -197,7 +197,14 @@ Now let's make custom form content
 # Documentation
 
 ## @starlib_screen.screen_template
-| Parameter | Default Value  |Description                   |
+| Parameter | Default Value | Description |
 | :-------- | :-------  | :-------------------------------- |
 |$size|225, 200|Size of screen template|
-||||
+|$header_control|starlib_screen.header_template|Element that will act as the header|
+|$content_control|starlib_screen.content_template|Element that will act as the main form content|
+|$background_control|starlib_style.screen_background|Background element|
+
+## @starlib_screen.header_template
+| Parameter | Default Value | Description |
+| :-------- | :-------  | :-------------------------------- |
+|$header_size|100%, 24|Size of the header element|
